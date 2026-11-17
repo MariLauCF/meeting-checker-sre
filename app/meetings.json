@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "subject": "Daily Huddle - Data Growth",
+    "type": "Daily Huddle",
+    "time": "9:30 am ET",
+    "room": "OMA C7 - 9th floor",
+    "attendees": [
+      {
+        "name": "Ian",
+        "response": "accepted"
+      },
+      {
+        "name": "Rob",
+        "response": "accepted"
+      },
+      {
+        "name": "Jonathan",
+        "response": "accepted"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Client Meeting - Data analysis discussion",
+    "type": "Client Meeting",
+    "time": "11:15am ET",
+    "room": "",
+    "attendees": [
+      {
+        "name": "Matthias",
+        "response": "accepted"
+      },
+      {
+        "name": "Ian",
+        "response": "accepted"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Daily Huddle - Data Growth - ITF",
+    "type": "Daily Huddle",
+    "time": "2:00pm ET",
+    "room": "OMA D7 - 9th floor",
+    "attendees": [
+      {
+        "name": "Ian",
+        "response": "accepted"
+      },
+      {
+        "name": "Rob",
+        "response": "pending"
+      },
+      {
+        "name": "Jonathan",
+        "response": "accepted"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Client Meeting - Data Strategy 2027",
+    "type": "Client Meeting",
+    "time": "3:30pm ET",
+    "room": "OMA C13 - 8th floor",
+    "attendees": [
+      {
+        "name": "Olympia",
+        "response": "accepted"
+      },
+      {
+        "name": "Ian",
+        "response": "accepted"
+      }
+    ]
+  }
+]
