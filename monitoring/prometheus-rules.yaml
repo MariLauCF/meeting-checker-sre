@@ -1,0 +1,41 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: meeting-checker-alerts
+  namespace: monitoring
+  labels:
+    release: monitoring
+spec:
+  groups:
+    - name: meeting-checker.rules
+      rules:
+
+        - alert: MeetingMissingRoom
+          expr: meeting_checker_missing_room_total > 0
+          for: 30s
+          labels:
+            severity: warning
+            application: meeting-checker
+          annotations:
+            summary: "Meeting without assigned room"
+            description: "Meeting Checker detected at least one meeting without an assigned room."
+
+        - alert: PendingMeetingRSVP
+          expr: meeting_checker_pending_rsvp_total > 0
+          for: 30s
+          labels:
+            severity: warning
+            application: meeting-checker
+          annotations:
+            summary: "Pending meeting RSVP detected"
+            description: "Meeting Checker detected at least one attendee with a pending RSVP."
+
+        - alert: MeetingCheckerDown
+          expr: up{job="meeting-checker"} == 0
+          for: 1m
+          labels:
+            severity: critical
+            application: meeting-checker
+          annotations:
+            summary: "Meeting Checker is unavailable"
+            description: "Prometheus cannot scrape the Meeting Checker application."
