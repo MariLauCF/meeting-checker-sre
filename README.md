@@ -28,8 +28,7 @@ Meeting Checker get the infromation from the meetings.json file, and it should c
 	• 1 pending RSVP
 	• 0 declined RSVPs
 Meeting Checker Application
-screenshots/1.%20Meeting%20checker%20app.png
-
+![Meeting Checker Application](screenshots/1. Meeting checker app.png)
 
 Docker
 The docker image is: docker build -t meeting-checker:v1 .
@@ -41,7 +40,7 @@ The application open in the browser by pasting:
 http://localhost:5000
 
 Docker Image
-screenshots/3.%20Docker%20image.png
+![Docker Image](screenshots/3. Docker image.png)
 
 Kubernetes
 To start Minikube:
@@ -57,8 +56,7 @@ To Check the Pod:
 kubectl get pods -n meeting-checker
 
 Kubernetes
-screenshots/4.%20Kubernetes.png
-
+![Kubernetes](screenshots/4. Kubernetes.png)
 
 Prometheus, Grafana and Alertmanager
 The monitoring tools are installed with Helm.
@@ -75,7 +73,7 @@ The monitoring stack includes:
 	• Alertmanager
 	
 Monitoring
-screenshots/9.%20Monitor.png
+![Monitoring](screenshots/9. Monitor.png)
 
 Prometheus
 The Service Monitor can be deployed with:
@@ -85,7 +83,7 @@ meeting_checker_total_meetings
 shows the total number of meetings.
 
 Prometheus
-screenshots/5.%20Prometheus.png
+![Prometheus](screenshots/5. Prometheus.png)
 
 Grafana
 The dashboard shows:
@@ -100,7 +98,7 @@ The dashboard file is saved in:
 monitoring/grafana-dashboard.json
 
 Grafana Dashboard
-screenshots/6.%20Grafana.png
+![Grafana Dashboard](screenshots/6. Grafana.png)
 
 Alerts
 Prometheus has three alert rules:
@@ -114,15 +112,14 @@ They can be deployed with:
 kubectl apply -f monitoring/prometheus-rules.yaml
 
 Prometheus Alerts
-screenshots/7.%20Alerts%20firing.png
+![Prometheus Alerts](screenshots/7. Alerts firing.png)
 
 Alertmanager
 Alertmanager receives the alerts created by Prometheus.
 For the test, the sample data has one meeting without a room and one pending RSVP. This makes it possible to see the alerts working.
 
 Alertmanager
-screenshots/8.%20Alert%20manager.png
-
+![Alertmanager](screenshots/8. Alert manager.png)
 
 Maria Laura Cascante Fallas
 SRE Academy Final Project
