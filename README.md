@@ -39,7 +39,7 @@ Meeting Checker gets the information from the `meetings.json` file, and it conta
 
 ### Meeting Checker Application
 
-screenshots/01-application.png
+screenshots/1.%20Meeting%20checker%20app.png
 
 ## Docker
 
@@ -63,7 +63,7 @@ http://localhost:5000
 
 ### Docker Image
 
-screenshots/02-docker.png
+screenshots/3.%20Docker%20image.png
 
 ## Kubernetes
 
@@ -100,7 +100,7 @@ kubectl get pods -n meeting-checker
 
 ### Kubernetes
 
-screenshots/03-kubernetes.png
+screenshots/4.%20Kubernetes.png
 
 ## Prometheus, Grafana and Alertmanager
 
@@ -132,7 +132,7 @@ The monitoring stack includes:
 
 ### Monitoring
 
-screenshots/08-monitoring.png
+screenshots/9.%20Monitor.png
 
 ## Prometheus
 
@@ -152,7 +152,7 @@ shows the total number of meetings.
 
 ### Prometheus
 
-screenshots/04-prometheus.png
+screenshots/5.%20Prometheus.png
 
 ## Grafana
 
@@ -174,7 +174,7 @@ monitoring/grafana-dashboard.json
 
 ### Grafana Dashboard
 
-screenshots/05-grafana.png
+screenshots/6.%20Grafana.png
 
 ## Alerts
 
@@ -198,7 +198,7 @@ kubectl apply -f monitoring/prometheus-rules.yaml
 
 ### Prometheus Alerts
 
-screenshots/06-alerts.png
+screenshots/7.%20Alerts%20firing.png
 
 ## Alertmanager
 
@@ -208,7 +208,7 @@ For the test, the sample data has one meeting without a room and one pending RSV
 
 ### Alertmanager
 
-screenshots/07-alertmanager.png
+screenshots/8.%20Alert%20manager.png
 
 ---
 
