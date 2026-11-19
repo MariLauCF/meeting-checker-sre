@@ -104,12 +104,6 @@ kubectl get pods -n meeting-checker
 
 ## Prometheus, Grafana and Alertmanager
 
-The monitoring tools are installed with Helm.
-
-
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-
 
 To create the monitoring namespace:
 
